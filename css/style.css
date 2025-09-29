@@ -1,0 +1,12 @@
+:root{--bg:#fdf6e3;--text:#333;--accent:#b58900}
+body{margin:0;font-family:system-ui;background:var(--bg);color:var(--text)}
+header{background:#002b36;color:#eee;padding:2rem;text-align:center}
+h1 span{color:var(--accent)}
+section{padding:1.5rem;max-width:900px;margin:auto}
+form{display:grid;gap:.8rem 1.2rem;grid-template-columns:1fr 1fr}
+label{display:flex;flex-direction:font-size:.9rem}
+input{width:100%;padding:.4rem .6rem}
+button{padding:.6rem 1rem;background:var(--accent);color:#fff;border:0;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{padding:.5rem;border:1px solid #ddd;text-align:center;font-size:.85rem}
+details{margin-top:1.2rem;font-size:.9rem}
