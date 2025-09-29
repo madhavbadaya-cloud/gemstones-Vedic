@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Navaratna – Vedic Gem Prescriber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Navaratna <span>Gem Prescriber</span></h1>
+  <p>Classical Jyotish gemstone logic – no Sun-sign guesswork</p>
+</header>
+
+<main>
+  <section id="input">
+    <h2>Step 1 &nbsp;·&nbsp; Birth data</h2>
+    <form id="birthForm">
+      <label>Date
+        <input type="date" id="dob" required>
+      </label>
+      <label>Time (24 h)
+        <input type="time" id="tob" required>
+      </label>
+      <label>Place
+        <input type="search" id="place" placeholder="City, Country" required>
+      </label>
+      <button type="submit">Calculate chart</button>
+    </form>
+  </section>
+
+  <section id="loader" hidden>Drawing your horoscope…</section>
+
+  <section id="result" hidden>
+    <h2>Step 2 &nbsp;·&nbsp; Your personalised gems</h2>
+    <p>Lagna: <strong id="lagna"></strong>  Lagna lord: <strong id="llord"></strong></p>
+
+    <table id="gemTable">
+      <thead>
+        <tr>
+          <th>Planet</th><th>Shadbala</th><th>Role</th>
+          <th>Gem</th><th>Metal</th><th>Finger</th><th>Day/Time</th><th>Mantra</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <details>
+      <summary>How these rules were chosen</summary>
+      <ul>
+        <li>Only functional benefics or weakened lagna-lord are recommended.</li>
+        <li>Afflicted planets (combust, debilitated, in 6/8/12) get <em>strengthening</em> gems only if Dasha supports.</li>
+        <li>Enemy gems (e.g. Blue-sapphire + Ruby) are never mixed.</li>
+      </ul>
+    </details>
+  </section>
+</main>
+
+<footer>
+  Built for students of Jyotish. No affiliate links, no cookies.
+</footer>
+
+<script src="js/chart.js"></script>
+<script src="js/gems.js"></script>
+</body>
+</html>
